@@ -1,6 +1,27 @@
-*, *::after, *::before {
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+:root {
+  --dark-pink: hsl(337, 48%, 49%);
+  --link-water-white: hsl(220, 60%, 99%);
+  --san-juan-blue: hsl(208, 33%, 32%);
+  --mirage-blue: hsl(207, 27%, 15%);
+  --charm-pink: hsl(337, 60%, 64%);
+  --light-san-juan-blue: hsl(207, 16%, 50%);
+}
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
 }
 
+html {
+  font-size: 10px;
+}
 
+body {
+  font-family: "Public Sans", sans-serif;
+  color: var(--san-juan-blue);
+}
