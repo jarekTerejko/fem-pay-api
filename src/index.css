@@ -8,6 +8,7 @@
   --mirage-blue: hsl(207, 27%, 15%);
   --charm-pink: hsl(337, 60%, 64%);
   --light-san-juan-blue: hsl(207, 16%, 50%);
+  --body-bg: hsl(213, 48%, 95%);
 }
 
 *,
@@ -24,4 +25,12 @@ html {
 body {
   font-family: "Public Sans", sans-serif;
   color: var(--san-juan-blue);
+  overflow-x: hidden;
+  font-size: 1.5rem;
+  background: var(--body-bg);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
 }

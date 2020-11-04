@@ -1,10 +1,9 @@
 import React from "react";
+import SectionHero from "../Components/SectionHero";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Contact page</h1>
-    </div>
+    <SectionHero />
   );
 };
 
