@@ -1,13 +1,24 @@
-export { default as tesla } from './desktop/tesla.svg';
-export { default as microsoft } from './desktop/microsoft.svg';
-export { default as hp } from './desktop/hewlett-packard.svg';
-export { default as oracle } from './desktop/oracle.svg';
-export { default as google } from './desktop/google.svg';
-export { default as nvidia } from './desktop/nvidia.svg';
+import tesla from "./desktop/tesla.svg";
+import microsoft from "./desktop/microsoft.svg";
+import hp from "./desktop/hewlett-packard.svg";
+import oracle from "./desktop/oracle.svg";
+import google from "./desktop/google.svg";
+import nvidia from "./desktop/nvidia.svg";
 
-export { default as teslaWhite } from './desktop/tesla--white.svg';
-export { default as microsoftWhite } from './desktop/microsoft--white.svg';
-export { default as hpWhite } from './desktop/hewlett-packard--white.svg';
-export { default as oracleWhite } from './desktop/oracle--white.svg';
-export { default as googleWhite } from './desktop/google--white.svg';
-export { default as nvidiaWhite } from './desktop/nvidia--white.svg';
+import teslaWhite from "./desktop/tesla--white.svg";
+import microsoftWhite from "./desktop/microsoft--white.svg";
+import hpWhite from "./desktop/hewlett-packard--white.svg";
+import oracleWhite from "./desktop/oracle--white.svg";
+import googleWhite from "./desktop/google--white.svg";
+import nvidiaWhite from "./desktop/nvidia--white.svg";
+
+export const partnersDark = [tesla, microsoft, hp, oracle, google, nvidia];
+
+export const partnersWhite = [
+  teslaWhite,
+  microsoftWhite,
+  hpWhite,
+  oracleWhite,
+  googleWhite,
+  nvidiaWhite,
+];
