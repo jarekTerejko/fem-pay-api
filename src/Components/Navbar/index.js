@@ -21,13 +21,19 @@ const Navbar = () => {
           <NavLinksWrapper>
             <NavLinks>
               <NavItem>
-                <NavLinkR to="/pricing">pricing</NavLinkR>
+                <NavLinkR dark="true" to="/pricing">
+                  pricing
+                </NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinkR to="/about">about</NavLinkR>
+                <NavLinkR dark="true" to="/about">
+                  about
+                </NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinkR to="/contact">contact</NavLinkR>
+                <NavLinkR dark="true" to="/contact">
+                  contact
+                </NavLinkR>
               </NavItem>
             </NavLinks>
             <Button to="/pricing">Schedule a Demo</Button>

@@ -31,7 +31,8 @@ export const NavItem = styled.li`
 
 export const NavLinkR = styled(NavLinkRouter)`
   text-decoration: none;
-  color: hsl(208deg 33% 32%);
+  color: ${({ dark }) =>
+    dark ? "var(--san-juan-blue)" : "var(--link-water-white)"};
   font-size: 1.3rem;
   text-transform: capitalize;
   font-weight: 500;
