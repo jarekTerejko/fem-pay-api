@@ -1,5 +1,6 @@
 import React from "react";
 import Features from "../Components/Features";
+import Footer from "../Components/Footer";
 import Install from "../Components/Install";
 import Partners from "../Components/Partners";
 import Question from "../Components/Question";
@@ -15,6 +16,7 @@ const Home = () => {
       <SimpleUiUx />
       <Features/>
       <Question/>
+      <Footer/>
     </>
   );
 };
