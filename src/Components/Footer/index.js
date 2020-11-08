@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <FooterElement>
       <Container>
-        <NavWrapper>
+        <NavWrapper footerEl="true">
           <LogoLink logoRegular={false} />
           <NavLinksWrapper>
             <NavLinks>

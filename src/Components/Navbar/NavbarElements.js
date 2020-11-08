@@ -9,6 +9,7 @@ export const NavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 4.5rem 0;
+  padding: ${({ footerEl }) => (footerEl ? "3rem 0" : "4.5rem 0")};
   align-items: center;
 `;
 
