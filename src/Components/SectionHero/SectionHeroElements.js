@@ -49,6 +49,17 @@ export const SectionHeroContactLink = styled(Link)`
   color: var(--light-san-juan-blue);
   font-weight: 700;
   padding-left: 1rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -1px;
+    height: 2px;
+    width: calc(100% - 10px);
+    background: var(--light-san-juan-blue);
+  }
 `;
 export const SectionHeroColRight = styled.div`
   display: flex;
