@@ -25,6 +25,21 @@ export const FormSmallInput = styled.input`
   }
 `;
 
+export const FormSmallSuccessMsg = styled.span`
+  display: block;
+  position: absolute;
+  left: 30px;
+  bottom: -22px;
+  color: var(--succes-msg-color);
+`;
+export const FormSmallErrorMsg = styled.span`
+  display: block;
+  position: absolute;
+  left: 30px;
+  bottom: -22px;
+  color: var(--charm-pink);
+`;
+
 export const FormSmallButtonSubmit = styled.button`
   padding: 1.6rem 2.8rem;
   background: var(--dark-pink);
