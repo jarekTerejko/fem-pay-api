@@ -1,10 +1,13 @@
 import React from "react";
+import SiteHeader from "../Components/SiteHeader";
 
 const Pricing = () => {
+  const title = "Pricing";
+
   return (
-    <div>
-      <h1>Pricing page</h1>
-    </div>
+    <>
+      <SiteHeader title={title} />
+    </>
   );
 };
 
