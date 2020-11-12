@@ -3,6 +3,8 @@ import CenteredPhoto from "../Components/CenteredPhoto";
 import DescriptionCols from "../Components/DescriptionCols";
 import InBrief from "../Components/InBrief";
 import SiteHeader from "../Components/SiteHeader";
+import Question from "../Components/Question";
+import Footer from "../Components/Footer";
 
 const About = () => {
   const title =
@@ -42,6 +44,8 @@ const About = () => {
       <CenteredPhoto />
       <InBrief />
       <DescriptionCols about="about" data={descriptionColsData[1]} />
+      <Question />
+      <Footer />
     </>
   );
 };

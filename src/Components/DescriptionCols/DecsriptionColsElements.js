@@ -24,4 +24,5 @@ export const DescriptionColsColRight = styled.div`
 export const DescriptionColsText = styled.p`
   color: var(--light-san-juan-blue);
   line-height: 1.8;
+  margin-bottom: 2rem;
 `;
