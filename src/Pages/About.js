@@ -1,4 +1,5 @@
 import React from "react";
+import CenteredPhoto from "../Components/CenteredPhoto";
 import DescriptionCols from "../Components/DescriptionCols";
 import SiteHeader from "../Components/SiteHeader";
 
@@ -37,6 +38,7 @@ const About = () => {
     <>
       <SiteHeader title={title} about="about" />
       <DescriptionCols about="about" data={descriptionColsData[0]} />
+      <CenteredPhoto />
       <DescriptionCols about="about" data={descriptionColsData[1]} />
     </>
   );
