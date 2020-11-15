@@ -1,4 +1,5 @@
 import React from "react";
+import AboutMain from "../Components/AboutMain";
 import SiteHeader from "../Components/SiteHeader";
 
 const Contact = () => {
@@ -7,6 +8,7 @@ const Contact = () => {
   return (
     <>
       <SiteHeader title={title} />
+      <AboutMain />
     </>
   );
 };
