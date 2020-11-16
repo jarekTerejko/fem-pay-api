@@ -1,4 +1,5 @@
 import React from "react";
+import PricingMain from "../Components/PricingMain";
 import SiteHeader from "../Components/SiteHeader";
 
 const Pricing = () => {
@@ -7,6 +8,7 @@ const Pricing = () => {
   return (
     <>
       <SiteHeader title={title} />
+      <PricingMain />
     </>
   );
 };
