@@ -38,27 +38,12 @@ const FormBig = () => {
   };
 
   const isMailValid = (email) => {
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    return /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i.test(
       email
     );
   };
 
-  const handleNameChange = (target, e) => {
-    setValues({ ...values, nameValue: e.target.value });
-  };
-  const handleEmailChange = (target, e) => {
-    setValues({ ...values, email: e.target.value });
-  };
-  const handleCompanyNameChange = (target, e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
-    console.log(e.target);
-  };
-  const handleTitleChange = (target, e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
-    console.log(e.target);
-  };
-
-  const handleInputChange = (target, e) => {
+  const handleInputChange = (e) => {
     if (isSubmitted) {
       setIsSubmitted(false);
     }
@@ -80,7 +65,7 @@ const FormBig = () => {
         name="nameValue"
         placeholder="Name"
         value={values.nameValue}
-        onChange={(e) => handleInputChange(e.target, e)}
+        onChange={(e) => handleInputChange(e)}
       />
       {isSubmitted && !values.nameValue && (
         <FormBigInputErrMsg>This field can't be empty</FormBigInputErrMsg>
@@ -90,8 +75,7 @@ const FormBig = () => {
         name="email"
         placeholder="Email Address"
         value={values.email}
-        // onChange={(e) => handleEmailChange(e.target, e)}
-        onChange={(e) => handleInputChange(e.target, e)}
+        onChange={(e) => handleInputChange(e)}
       />
       {isSubmitted && !values.email && (
         <FormBigInputErrMsg>This field can't be empty</FormBigInputErrMsg>
@@ -106,7 +90,7 @@ const FormBig = () => {
         name="companyName"
         placeholder="Company Name"
         value={values.companyName}
-        onChange={(e) => handleInputChange(e.target, e)}
+        onChange={(e) => handleInputChange(e)}
       />
       {isSubmitted && !values.companyName && (
         <FormBigInputErrMsg>This field can't be empty</FormBigInputErrMsg>
@@ -116,7 +100,7 @@ const FormBig = () => {
         name="title"
         placeholder="Title"
         value={values.title}
-        onChange={(e) => handleInputChange(e.target, e)}
+        onChange={(e) => handleInputChange(e)}
       />
       {isSubmitted && !values.title && (
         <FormBigInputErrMsg>This field can't be empty</FormBigInputErrMsg>
@@ -126,7 +110,7 @@ const FormBig = () => {
       </FormBigTextareaLabel>
       <FormBigTextMsg
         value={values.textareaValue}
-        onChange={(e) => handleInputChange(e.target, e)}
+        onChange={(e) => handleInputChange(e)}
         name="textareaValue"
       />
 
