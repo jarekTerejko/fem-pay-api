@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMain from "../Components/AboutMain";
+import ContactMain from "../Components/ContactMain";
 import SiteHeader from "../Components/SiteHeader";
 import Question  from "../Components/Question";
 import Footer from "../Components/Footer";
@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <SiteHeader title={title} />
-      <AboutMain />
+      <ContactMain />
       <Question />
       <Footer />
     </>

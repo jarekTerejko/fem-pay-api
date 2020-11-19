@@ -1,10 +1,10 @@
 import React from "react";
 import FormBig from "../FormBig";
 import {
-  AboutMainWrapper,
-  AboutMainColLeft,
-  AboutMainCols,
-} from "./AboutMainElements";
+  ContactMainWrapper,
+  ContactMainColLeft,
+  ContactMainCols,
+} from "./ContactMainElements";
 import {
   SectionPartnersColRight,
   SectionPartnersImg,
@@ -12,23 +12,23 @@ import {
 import { Container } from "../Container";
 import { partnersDark } from "../../images/shared";
 
-const AboutMain = () => {
+const ContactMain = () => {
   return (
-    <AboutMainWrapper>
+    <ContactMainWrapper>
       <Container>
-        <AboutMainCols>
-          <AboutMainColLeft>
+        <ContactMainCols>
+          <ContactMainColLeft>
             <FormBig />
-          </AboutMainColLeft>
+          </ContactMainColLeft>
           <SectionPartnersColRight>
             {partnersDark.map((partner, i) => {
               return <SectionPartnersImg src={partner} key={i} />;
             })}
           </SectionPartnersColRight>
-        </AboutMainCols>
+        </ContactMainCols>
       </Container>
-    </AboutMainWrapper>
+    </ContactMainWrapper>
   );
 };
 
-export default AboutMain;
+export default ContactMain;
