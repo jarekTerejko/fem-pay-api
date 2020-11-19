@@ -24,4 +24,10 @@ export const SiteHeaderH1 = styled.h1`
   line-height: 1;
   font-weight: 400;
   margin-bottom: 7rem;
+
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;

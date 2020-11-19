@@ -15,7 +15,7 @@ const InBrief = () => {
         <InBriefCols>
           {data.map((col, i) => {
             return (
-              <InBriefCol>
+              <InBriefCol key={i}>
                 <InBriefTitle>{col.title}</InBriefTitle>
                 <InBriefNumber>{col.number}</InBriefNumber>
               </InBriefCol>

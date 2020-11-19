@@ -15,20 +15,18 @@ const DescriptionCols = ({ about, data }) => {
     <DescriptionColsWrapper>
       <Container>
         <ContainerSmall about={about}>
-          <DescriptionColsInnerWrapper>
-            {data.map((item, i) => {
-              return (
-                <>
-                  <DescriptionColsColLeft>
-                    <DescriptionColsH3>{item.title}</DescriptionColsH3>
-                  </DescriptionColsColLeft>
-                  <DescriptionColsColRight>
-                    <DescriptionColsText>{item.text}</DescriptionColsText>
-                  </DescriptionColsColRight>
-                </>
-              );
-            })}
-          </DescriptionColsInnerWrapper>
+          {data.map((item, i) => {
+            return (
+              <DescriptionColsInnerWrapper key={i}>
+                <DescriptionColsColLeft>
+                  <DescriptionColsH3>{item.title}</DescriptionColsH3>
+                </DescriptionColsColLeft>
+                <DescriptionColsColRight>
+                  <DescriptionColsText>{item.text}</DescriptionColsText>
+                </DescriptionColsColRight>
+              </DescriptionColsInnerWrapper>
+            );
+          })}
         </ContainerSmall>
       </Container>
     </DescriptionColsWrapper>

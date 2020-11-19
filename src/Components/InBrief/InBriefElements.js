@@ -8,6 +8,10 @@ export const InBriefCols = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 2rem;
+  }
 `;
 export const InBriefCol = styled.div`
   padding: 2rem 0;
