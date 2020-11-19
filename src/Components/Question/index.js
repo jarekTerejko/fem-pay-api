@@ -12,7 +12,7 @@ const Question = () => {
     <ArticleQuestion>
       <Container>
         <ArticleQuestionWrapper>
-          <ArticleQuestionH2>Ready to start</ArticleQuestionH2>
+          <ArticleQuestionH2>Ready to start?</ArticleQuestionH2>
           <FormSmall />
         </ArticleQuestionWrapper>
       </Container>

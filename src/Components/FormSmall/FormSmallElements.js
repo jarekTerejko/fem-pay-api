@@ -4,6 +4,13 @@ export const FormSmallWrapper = styled.form`
   font-family: inherit;
   max-width: 44rem;
   margin-bottom: 3rem;
+
+  @media screen and (max-width: 1165px) {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
 `;
 
 export const FormSmallInputWrapper = styled.div`

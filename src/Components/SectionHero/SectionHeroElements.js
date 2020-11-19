@@ -5,6 +5,10 @@ import Circle from "../../images/shared/desktop/bg-pattern-circle.svg";
 export const SectionHeroWrapper = styled.section`
   position: relative;
 
+  @media screen and (max-width: 780px) {
+    padding-bottom: 9rem;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -14,6 +18,13 @@ export const SectionHeroWrapper = styled.section`
     top: -270px;
     right: -140px;
     z-index: -1;
+
+    @media screen and (max-width: 780px) {
+      top: 0;
+      right: unset;
+      left: 50%;
+      transform: translate(-50%, -500px);
+    }
   }
 `;
 
@@ -21,11 +32,19 @@ export const SectionHeroContentWrapper = styled.div`
   min-height: 700px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 780px) {
+    grid-template-columns: 1fr;
+  }
 `;
 export const SectionHeroColLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (max-width: 780px) {
+    grid-row: 2/3;
+  }
 `;
 
 export const SectionHeroH1 = styled.h1`
@@ -34,10 +53,22 @@ export const SectionHeroH1 = styled.h1`
   line-height: 1;
   margin-bottom: 6rem;
   margin-top: -3rem;
+
+  @media screen and (max-width: 1165px) {
+    font-size: 6rem;
+    text-align: center;
+  }
+  @media screen and (max-width: 780px) {
+    max-width: 70rem;
+    margin-top: 0;
+  }
 `;
 
 export const SectionHeroQuestionWrapper = styled.div`
   display: flex;
+  @media screen and (max-width: 1165px) {
+    justify-content: center;
+  }
 `;
 
 export const SectionHeroQuestion = styled.span`
@@ -64,10 +95,19 @@ export const SectionHeroContactLink = styled(Link)`
 export const SectionHeroColRight = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 780px) {
+    grid-row: 1/2;
+    justify-content: center;
+  }
 `;
 
 export const SectionHeroPhoneImg = styled.img`
   display: block;
   max-width: 100%;
   margin-left: auto;
+
+  @media screen and (max-width: 780px) {
+    margin-left: 4.5rem;
+  }
 `;
