@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const FormBigWrapper = styled.form`
   display: grid;
   grid-template-columns: 1fr;
+
+  @media screen and (max-width: 1000px) {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
 `;
 
 export const FormBigInput = styled.input`
