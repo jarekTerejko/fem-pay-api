@@ -112,20 +112,26 @@ export const SectionPartnersColRight = styled.div`
 export const SectionPartnersImg = styled.img`
   &:nth-child(1) {
     align-self: end;
+    justify-self: start;
   }
   &:nth-child(2) {
     align-self: end;
+    justify-self: center;
   }
   &:nth-child(3) {
     align-self: end;
+    justify-self: end;
   }
   &:nth-child(4) {
     align-self: start;
+    justify-self: start;
   }
   &:nth-child(5) {
     align-self: start;
+    justify-self: center;
   }
   &:nth-child(6) {
     align-self: start;
+    justify-self: end;
   }
 `;
