@@ -14,6 +14,10 @@ export const SiteHeaderWrapper = styled.div`
     right: 0;
     transform: translateX(150px) translateY(-710px);
     z-index: -1;
+
+    @media screen and (max-width: 1000px) {
+      transform: translateX(500px) translateY(-600px);
+    }
   }
 `;
 
