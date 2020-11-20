@@ -4,6 +4,8 @@ import {
   ContactMainWrapper,
   ContactMainColLeft,
   ContactMainCols,
+  ContactMainColRight,
+  ContactMainParnersIntro,
 } from "./ContactMainElements";
 import {
   SectionPartnersColRight,
@@ -20,11 +22,16 @@ const ContactMain = () => {
           <ContactMainColLeft>
             <FormBig />
           </ContactMainColLeft>
-          <SectionPartnersColRight>
-            {partnersDark.map((partner, i) => {
-              return <SectionPartnersImg src={partner} key={i} />;
-            })}
-          </SectionPartnersColRight>
+          <ContactMainColRight>
+            <ContactMainParnersIntro>
+              Join the thousands of innovators already building with us
+            </ContactMainParnersIntro>
+            <SectionPartnersColRight>
+              {partnersDark.map((partner, i) => {
+                return <SectionPartnersImg src={partner} key={i} />;
+              })}
+            </SectionPartnersColRight>
+          </ContactMainColRight>
         </ContactMainCols>
       </Container>
     </ContactMainWrapper>
