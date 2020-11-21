@@ -25,6 +25,10 @@ export const SectionHeroWrapper = styled.section`
       left: 50%;
       transform: translate(-50%, -500px);
     }
+
+    @media screen and (max-width: 400px) {
+      transform: translate(-50%, -600px);
+    }
   }
 `;
 
@@ -58,9 +62,14 @@ export const SectionHeroH1 = styled.h1`
     font-size: 6rem;
     text-align: center;
   }
+  
   @media screen and (max-width: 780px) {
     max-width: 70rem;
     margin-top: 0;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 3.2rem;
   }
 `;
 
@@ -69,11 +78,19 @@ export const SectionHeroQuestionWrapper = styled.div`
   @media screen and (max-width: 1165px) {
     justify-content: center;
   }
+
+  @media screen and (max-width: 440px) {
+    margin-top: 8rem;
+  }
 `;
 
 export const SectionHeroQuestion = styled.span`
   margin-left: 3rem;
   color: var(--light-san-juan-blue);
+
+  @media screen and (max-width: 1165px) {
+    margin-left: 0;
+  }
 `;
 
 export const SectionHeroContactLink = styled(Link)`

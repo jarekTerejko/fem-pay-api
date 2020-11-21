@@ -10,7 +10,6 @@ export const FormSmallWrapper = styled.form`
     left: 50%;
     transform: translateX(-50%);
   }
-  
 `;
 
 export const FormSmallInputWrapper = styled.div`
@@ -64,8 +63,13 @@ export const FormSmallButtonSubmit = styled.button`
   top: 0;
   right: 0;
 
+  @media screen and (max-width: 440px) {
+    width: 100%;
+    top: 80px;
+  }
+
   &:hover {
-    background: #fff;
-    color: var(--dark-pink);
+    background: var(--charm-pink);
+    border-color: var(--charm-pink);
   }
 `;

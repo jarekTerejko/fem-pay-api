@@ -24,4 +24,8 @@ export const ArticleQuestionH2 = styled.h2`
     text-align: center;
     line-height: unset;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 3.2rem;
+  }
 `;

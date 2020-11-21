@@ -29,6 +29,10 @@ export const SectionSimpleUiUxWrapper = styled.div`
   @media screen and (max-width: 970px) {
     grid-template-columns: 1fr;
     padding: 10rem 0;
+
+    @media screen and (max-width: 500px) {
+      min-height: unset;
+    }
   }
 `;
 
@@ -49,6 +53,10 @@ export const SectionSimpleUiUxH2 = styled.h2`
   font-size: 4.6rem;
   font-weight: 400;
   margin-bottom: 3rem;
+
+  @media screen and (max-width: 500px) {
+    font-size: 3.2rem;
+  }
 `;
 
 export const SectionSimpleUiUxP = styled.p`
@@ -76,6 +84,6 @@ export const SectionSimpleUiUxImg = styled.img`
   transform: scale(1.2) translateX(20px);
 
   @media screen and (max-width: 970px) {
-    transform: scale(1) translateX(20px);
+    transform: scale(1) translateX(10px);
   }
 `;

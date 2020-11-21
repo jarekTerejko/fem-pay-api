@@ -43,6 +43,11 @@ export const SectionInstallH2 = styled.h2`
   font-weight: 400;
   margin-bottom: 3rem;
   margin-top: -7rem;
+
+  @media screen and (max-width: 970px) {
+    margin-top: -4rem;
+    font-size: 3.2rem;
+  }
 `;
 
 export const SectionInstallP = styled.p`
