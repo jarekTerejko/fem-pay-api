@@ -3,10 +3,18 @@ import { LogoImg, LogoLinkContainer } from "./LogoLinkElements";
 import LogoImage from "../../images/shared/desktop/logo.svg";
 import LogoImageWhite from "../../images/shared/desktop/logo--white.svg";
 
-const LogoLink = ({ logoRegular }) => {
+const LogoLink = ({ logoRegular, handleMenuOpen, isOpen }) => {
+  const closeMenu = () => {
+    if (isOpen) {
+      handleMenuOpen();
+    } else {
+      return;
+    }
+  };
+
   return (
     <>
-      <LogoLinkContainer to="/">
+      <LogoLinkContainer onClick={closeMenu} to="/">
         <LogoImg src={logoRegular ? LogoImage : LogoImageWhite} />
       </LogoLinkContainer>
     </>

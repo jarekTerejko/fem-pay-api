@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavTriggerBtn, NavTriggerImg } from "./NavTriggerElements";
 import Bars from "../../images/shared/mobile/menu.svg";
 import Close from "../../images/shared/mobile/close.svg";
 
-const NavTrigger = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const NavTrigger = ({ isOpen, handleMenuOpen }) => {
   return (
     <NavTriggerBtn>
-      <NavTriggerImg src={isOpen ? Close : Bars} />
+      <NavTriggerImg src={isOpen ? Close : Bars} onClick={handleMenuOpen} />
     </NavTriggerBtn>
   );
 };

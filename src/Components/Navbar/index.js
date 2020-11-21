@@ -12,33 +12,37 @@ import {
 } from "./NavbarElements";
 import LogoLink from "../LogoLink";
 
-const Navbar = () => {
+const Navbar = ({ isOpen, handleMenuOpen }) => {
   return (
     <NavbarContainer>
       <Container>
         <NavWrapper>
-          <LogoLink logoRegular={true} />
-          <NavLinksWrapper>
+          <LogoLink
+            logoRegular={true}
+            handleMenuOpen={handleMenuOpen}
+            isOpen={isOpen}
+          />
+          <NavLinksWrapper isOpen={isOpen}>
             <NavLinks>
               <NavItem>
-                <NavLinkR dark="true" to="/pricing">
+                <NavLinkR onClick={handleMenuOpen} dark="true" to="/pricing">
                   pricing
                 </NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinkR dark="true" to="/about">
+                <NavLinkR onClick={handleMenuOpen} dark="true" to="/about">
                   about
                 </NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinkR dark="true" to="/contact">
+                <NavLinkR onClick={handleMenuOpen} dark="true" to="/contact">
                   contact
                 </NavLinkR>
               </NavItem>
             </NavLinks>
             <Button to="/pricing">Schedule a Demo</Button>
           </NavLinksWrapper>
-          <NavTriggerBtn />
+          <NavTriggerBtn handleMenuOpen={handleMenuOpen} isOpen={isOpen} />
         </NavWrapper>
       </Container>
     </NavbarContainer>
