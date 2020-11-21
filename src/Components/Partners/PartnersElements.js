@@ -9,6 +9,7 @@ export const SectionPartners = styled.section`
 
   @media screen and (max-width: 970px) {
     padding: 8rem 0;
+    overflow-x: hidden;
   }
 
   &::before {
