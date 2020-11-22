@@ -2,8 +2,6 @@ import React from "react";
 import { Container } from "../Container";
 import LogoLink from "../LogoLink";
 import { NavWrapper } from "../Navbar/NavbarElements";
-import { NavLinksWrapper } from "../Navbar/NavbarElements";
-import { NavLinks } from "../Navbar/NavbarElements";
 import { NavItem } from "../Navbar/NavbarElements";
 import { NavLinkR } from "../Navbar/NavbarElements";
 import {
@@ -12,6 +10,8 @@ import {
   FooterElementSocialItem,
   FooterElementSocialLink,
   FooterElementSocialIcon,
+  FooterElementNavLinksWrapper,
+  FooterElementNavLinks,
 } from "./FooterElements";
 import Facebook from "../../images/shared/desktop/facebook.svg";
 import Twitter from "../../images/shared/desktop/twitter.svg";
@@ -25,18 +25,24 @@ const Footer = () => {
       <Container>
         <NavWrapper footerEl="true">
           <LogoLink logoRegular={false} />
-          <NavLinksWrapper>
-            <NavLinks>
+          <FooterElementNavLinksWrapper>
+            <FooterElementNavLinks>
               <NavItem>
-                <NavLinkR to="/pricing">pricing</NavLinkR>
+                <NavLinkR to="/pricing" footerel="true">
+                  pricing
+                </NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinkR to="/about">about</NavLinkR>
+                <NavLinkR to="/about" footerel="true">
+                  about
+                </NavLinkR>
               </NavItem>
-              <NavItem>
-                <NavLinkR to="/contact">contact</NavLinkR>
+              <NavItem footerEl="true">
+                <NavLinkR to="/contact" footerel="true">
+                  contact
+                </NavLinkR>
               </NavItem>
-            </NavLinks>
+            </FooterElementNavLinks>
             <FooterElementSocialsWrapper>
               {socialIcons.map((icon, i) => {
                 return (
@@ -48,7 +54,7 @@ const Footer = () => {
                 );
               })}
             </FooterElementSocialsWrapper>
-          </NavLinksWrapper>
+          </FooterElementNavLinksWrapper>
         </NavWrapper>
       </Container>
     </FooterElement>

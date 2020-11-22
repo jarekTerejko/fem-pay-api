@@ -4,17 +4,18 @@ import { NavLink as NavLinkRouter } from "react-router-dom";
 export const NavbarContainer = styled.nav`
   position: relative;
   padding: 4.5rem 0;
-
-  /* @media screen and (max-width: 710px) {
-    position: fixed;
-    width: 100%;
-  } */
 `;
 
 export const NavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: ${({ footerEl }) => (footerEl ? "2rem 0" : "0")};
+
+  @media screen and (max-width: 710px) {
+    flex-direction: column;
+    flex-direction: ${({ footerEl }) => (footerEl ? "column" : "row")};
+  }
 `;
 
 export const NavLinksWrapper = styled.div`
@@ -56,6 +57,7 @@ export const NavItem = styled.li`
   margin: 0 1rem;
   @media screen and (max-width: 710px) {
     margin: 1rem;
+    margin: ${({ footerEl }) => (footerEl ? ".5rem" : "1rem")};
 
     &:last-child {
       margin-bottom: 3rem;
@@ -74,6 +76,6 @@ export const NavLinkR = styled(NavLinkRouter)`
 
   @media screen and (max-width: 710px) {
     color: var(--link-water-white);
-    font-size: 2rem;
+    font-size: ${({ footerel }) => (footerel ? "1.3rem" : "1.8rem")};
   }
 `;

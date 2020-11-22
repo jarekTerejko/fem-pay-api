@@ -16,6 +16,35 @@ export const FooterElement = styled.footer`
     top: -170px;
     right: -430px;
     z-index: -1;
+
+    @media screen and (max-width: 710px) {
+      top: 0;
+      right: 0;
+      left: 50%;
+      transform: translate(-50%, 150px);
+    }
+  }
+`;
+
+export const FooterElementNavLinksWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  @media screen and (max-width: 710px) {
+    flex-direction: column;
+  }
+`;
+
+export const FooterElementNavLinks = styled.ul`
+  display: flex;
+  list-style: none;
+  margin-left: 6rem;
+  align-items: center;
+
+  @media screen and (max-width: 710px) {
+    margin-left: 0;
+    flex-direction: column;
   }
 `;
 export const FooterElementSocialsWrapper = styled.ul`
