@@ -48,7 +48,6 @@ const FormBig = () => {
       setIsSubmitted(false);
     }
     setValues({ ...values, [e.target.name]: e.target.value });
-    console.log(e.target);
   };
 
   const handleCheckboxChange = () => {
