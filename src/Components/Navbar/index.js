@@ -40,7 +40,9 @@ const Navbar = ({ isOpen, handleMenuOpen }) => {
                 </NavLinkR>
               </NavItem>
             </NavLinks>
-            <Button to="/pricing">Schedule a Demo</Button>
+            <Button to="#" onClick={handleMenuOpen}>
+              Schedule a Demo
+            </Button>
           </NavLinksWrapper>
           <NavTriggerBtn handleMenuOpen={handleMenuOpen} isOpen={isOpen} />
         </NavWrapper>
