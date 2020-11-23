@@ -18,6 +18,10 @@ export const SiteHeaderWrapper = styled.div`
     @media screen and (max-width: 1000px) {
       transform: translateX(500px) translateY(-600px);
     }
+
+    @media screen and (max-width: 710px) {
+      transform: translateX(540px) translateY(-740px);
+    }
   }
 `;
 
@@ -33,5 +37,9 @@ export const SiteHeaderH1 = styled.h1`
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (max-width: 710px) {
+    font-size: 3.2rem;
   }
 `;
