@@ -19,6 +19,10 @@ export const FormBigInput = styled.input`
   color: var(--light-san-juan-blue);
   font-family: "Public Sans", sans-serif;
   font-size: 1.5rem;
+
+  &::placeholder {
+    color: var(--light-san-juan-blue);
+  }
 `;
 
 export const FormBigInputErrMsg = styled.span`
