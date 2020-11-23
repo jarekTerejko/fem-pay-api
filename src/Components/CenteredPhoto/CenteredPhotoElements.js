@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Circle from "../../images/shared/desktop/bg-pattern-circle.svg";
 import BackgroundPhotoDesktop from "../../images/about/desktop/image-team-members.jpg";
 import BackgroundPhotoTablet from "../../images/about/tablet/image-team-members.jpg";
+import BackgroundPhotoMobile from "../../images/about/mobile/image-team-members.jpg";
 
 export const CenteredPhotoWrapper = styled.div`
   position: relative;
@@ -18,6 +19,13 @@ export const CenteredPhotoWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 267px;
+  }
+  @media screen and (max-width: 500px) {
+    background: url(${BackgroundPhotoMobile});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
   }
 
   &::before {

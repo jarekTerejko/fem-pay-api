@@ -12,12 +12,29 @@ export const InBriefCols = styled.div`
   @media screen and (max-width: 1200px) {
     padding: 0 2rem;
   }
+
+  @media screen and (max-width: 710px) {
+    display: block;
+    text-align: center;
+  }
 `;
 export const InBriefCol = styled.div`
   padding: 2rem 0;
   border: 1px solid hsl(207deg 17% 69% / 30%);
   border-left-color: transparent;
   border-right-color: transparent;
+
+  @media screen and (max-width: 710px) {
+    &:nth-child(2) {
+      border-color: transparent;
+    }
+    &:nth-child(1) {
+      border-bottom-color: transparent;
+    }
+    &:nth-child(3) {
+      border-top-color: transparent;
+    }
+  }
 `;
 
 export const InBriefTitle = styled.h4`
